@@ -14,14 +14,4 @@ void loop() {
     delay(500);
     motor.goSpeed(-100);
     delay(1000);
-
-
-
-
-
-
-
-
-
-    03
-}+
+}
