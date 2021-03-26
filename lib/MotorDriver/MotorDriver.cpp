@@ -49,3 +49,12 @@ void MotorDriver::goSpeed(int _speed) {
 
     }
 }
+
+void MotorDriver::revert(bool brakeAndRestart) {
+    if (brakeAndRestart) {
+        brake();
+        delay(500);
+    }
+    goSpeed(-speed);
+    unbrake();
+}

@@ -1,6 +1,6 @@
-// new motor shield library
-// by loovee
-// 2016-3-11
+// motor shield library
+// by Alex6
+// 18/03/2021
 #ifndef __MOTORDRIVER_H__
 #define __MOTORDRIVER_H__
 
@@ -25,6 +25,7 @@ class MotorDriver {
     void stop();
     void unbrake();
     void brake();
+    void revert(bool brakeAndRestart);
 
 };
 
